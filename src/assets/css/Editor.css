@@ -1,0 +1,131 @@
+.markdown-previewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+}
+
+#editor  {
+   width: 100%;
+   background-color: var(--wheat);
+   border: none;
+   resize: none;
+   outline: none;
+   height: 250px;
+}
+
+.editor-container {
+    width: 95%;
+}
+
+.previewer-container {
+    width: 95%;
+}
+
+.editor-container, .previewer-container {
+    border: 1px solid var(--blue);
+    outline: none;
+    font-size: 18px;
+    background-color: var(--wheat);
+    margin: 2%;
+}
+
+.editor-header, .previewer-header {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background-color: var(--green);
+    padding: 0 2%;
+    margin: 0;
+}
+
+#editor, #preview {
+   padding: 0 2%;
+}
+
+/* Previewer details */
+
+h1 {
+    border-bottom: 2px solid var(--blue);
+}
+
+h2 {
+    border-bottom: 1px solid var(--blue);
+}
+
+pre {
+    background-color: var(--light-green);
+    display: block;
+    overflow: auto;
+    padding: 5px;
+    line-height: 1.2;
+}
+
+code {
+    background-color: var(--light-green);
+}
+
+img {
+    width: 100%;
+}
+
+blockquote {
+    border-left: 3px solid var(--blue);
+    color: var(--blue);
+    padding-left: 5px;
+    margin-left: 25px;
+}
+
+@media (min-width: 768px) {
+    .editor-container {
+        width: 70%;
+    }
+    
+    .previewer-container {
+        width: 80%;
+    }
+
+    .editor-container, .previewer-container {
+        font-size: 24px;
+        box-shadow: 1px 1px 10px 2px #3e422b;
+    }
+}
+
+@media (min-width: 1020px) {
+    .editor-container {
+        width: 50%;
+    }
+    
+    .previewer-container {
+        width: 70%;
+    }
+
+    .editor-container, .previewer-container {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .editor-container {
+        width: 45%;
+    }
+    
+    .previewer-container {
+        width: 55%;
+    }
+
+}
+
+
+:root {
+    --green: #a2ac6e;
+    --lime: #ddff35;
+    --light-green: #cac8b0;
+    --wheat: #edebd7;
+    --blue: #001736;
+    --dark-cyan: #104377;
+    --dark-red: #7C0202; 
+    --yellow: #FEE06E;
+    --dark-yellow: #E6C95A; 
+  }
