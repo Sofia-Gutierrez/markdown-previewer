@@ -5,5 +5,9 @@
 html, body {
     padding: 0;
     margin: 0;
-    background-color: var(--light-green);
+    background-image: linear-gradient(var(--wheat),var(--green));
+}
+
+body::-webkit-scrollbar {
+    width: 0em;
 }
